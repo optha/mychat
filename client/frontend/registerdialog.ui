@@ -179,6 +179,28 @@
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="ClickedLabel" name="pass_visible">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
          <item>
@@ -218,12 +240,34 @@
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="ClickedLabel" name="confirm_visible">
+             <property name="minimumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_6">
            <item>
-            <widget class="QLabel" name="varify_label">
+            <widget class="QLabel" name="verify_label">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -242,7 +286,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="varify_edit">
+            <widget class="QLineEdit" name="verify_edit">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -258,7 +302,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="get_code">
+            <widget class="TimerBtn" name="get_code">
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -468,6 +512,18 @@
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TimerBtn</class>
+   <extends>QPushButton</extends>
+   <header>timerbtn.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ClickedLabel</class>
+   <extends>QLabel</extends>
+   <header>clickedlabel.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
