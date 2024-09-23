@@ -12,7 +12,7 @@ private:
 	// 接收器，接收对端连接
 	tcp::acceptor _acceptor;
 	net::io_context& _ioc;
-	// 复用，不断接收对端连接的信息
-	tcp::socket _socket;
+	//// 复用，不断接收对端连接的信息
+	//tcp::socket _socket;
 };
 
